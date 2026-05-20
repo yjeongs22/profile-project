@@ -19,53 +19,53 @@
       theme: {
         extend: {
           colors: {
-            "surface-container": "#eaedff",
-            "surface-container-highest": "#dae2fd",
-            "secondary-container": "#d0e1fb",
-            "on-tertiary-container": "#009668",
-            "inverse-surface": "#283044",
+            "surface-container": "#fdf2f8",
+            "surface-container-highest": "#fce7f3",
+            "secondary-container": "#fbcfe8",
+            "on-tertiary-container": "#831843",
+            "inverse-surface": "#831843",
             "surface-container-lowest": "#ffffff",
-            "surface-dim": "#d2d9f4",
+            "surface-dim": "#fce7f3",
             "on-primary": "#ffffff",
             "on-error": "#ffffff",
-            "tertiary-fixed-dim": "#4edea3",
+            "tertiary-fixed-dim": "#f472b6",
             "error": "#ba1a1a",
-            "on-secondary-fixed": "#0b1c30",
-            "background": "#faf8ff",
-            "outline-variant": "#c6c6cd",
+            "on-secondary-fixed": "#4c0519",
+            "background": "#fffbfc",
+            "outline-variant": "#fbcfe8",
             "primary": "#000000",
-            "inverse-on-surface": "#eef0ff",
-            "on-surface-variant": "#45464d",
-            "surface": "#faf8ff",
+            "inverse-on-surface": "#fdf2f8",
+            "on-surface-variant": "#9d174d",
+            "surface": "#fffbfc",
             "on-tertiary": "#ffffff",
-            "on-primary-container": "#5979ff",
-            "secondary": "#505f76",
-            "tertiary-container": "#002113",
+            "on-primary-container": "#db2777",
+            "secondary": "#9d174d",
+            "tertiary-container": "#4c0519",
             "on-error-container": "#93000a",
             "error-container": "#ffdad6",
-            "primary-fixed": "#dde1ff",
-            "primary-container": "#001356",
-            "surface-container-high": "#e2e7ff",
-            "on-primary-fixed-variant": "#0035be",
-            "secondary-fixed-dim": "#b7c8e1",
-            "on-secondary-fixed-variant": "#38485d",
-            "surface-tint": "#124af0",
+            "primary-fixed": "#fbcfe8",
+            "primary-container": "#831843",
+            "surface-container-high": "#fce7f3",
+            "on-primary-fixed-variant": "#be185d",
+            "secondary-fixed-dim": "#f9a8d4",
+            "on-secondary-fixed-variant": "#9d174d",
+            "surface-tint": "#db2777",
             "tertiary": "#000000",
             "on-secondary": "#ffffff",
-            "outline": "#76777d",
-            "surface-bright": "#faf8ff",
-            "primary-fixed-dim": "#b8c3ff",
-            "on-secondary-container": "#54647a",
-            "secondary-fixed": "#d3e4fe",
-            "inverse-primary": "#b8c3ff",
-            "surface-variant": "#dae2fd",
-            "tertiary-fixed": "#6ffbbe",
-            "on-primary-fixed": "#001356",
-            "surface-container-low": "#f2f3ff",
-            "on-background": "#131b2e",
-            "on-tertiary-fixed-variant": "#005236",
-            "on-surface": "#131b2e",
-            "on-tertiary-fixed": "#002113"
+            "outline": "#be185d",
+            "surface-bright": "#fffbfc",
+            "primary-fixed-dim": "#f9a8d4",
+            "on-secondary-container": "#831843",
+            "secondary-fixed": "#fce7f3",
+            "inverse-primary": "#f9a8d4",
+            "surface-variant": "#fce7f3",
+            "tertiary-fixed": "#f9a8d4",
+            "on-primary-fixed": "#4c0519",
+            "surface-container-low": "#fdf2f8",
+            "on-background": "#4c0519",
+            "on-tertiary-fixed-variant": "#be185d",
+            "on-surface": "#4c0519",
+            "on-tertiary-fixed": "#4c0519"
           },
           borderRadius: {
             DEFAULT: "0.125rem",
@@ -108,21 +108,48 @@
 
     /* ── Dark mode overrides ── */
     .dark body {
-      background-color: #0f1626;
-      color: #e2e8f8;
+      background-color: #2b0213;
+      color: #fdf2f8;
     }
 
     .dark .sidebar-card {
-      background-color: #1a233a;
+      background-color: #500724;
     }
 
     .dark .hero-card,
     .dark .exp-card {
-      background-color: #1a233a;
+      background-color: #500724;
     }
 
     .dark .project-card {
-      background-color: #1e2a42;
+      background-color: #4c0519;
+    }
+
+    /* ── 다크모드 컴포넌트 배경 오버라이드 ── */
+    .dark .bg-surface-container-lowest {
+      background-color: #500724 !important;
+      border-color: #831843 !important;
+    }
+    
+    .dark .bg-surface-container-low {
+      background-color: #4c0519 !important;
+    }
+    
+    .dark .bg-surface-container {
+      background-color: #831843 !important;
+    }
+    
+    .dark .bg-surface-container-high {
+      background-color: #9d174d !important;
+    }
+
+    /* 텍스트 밝기 수정 */
+    .dark .text-on-surface {
+      color: #fdf2f8 !important;
+    }
+    
+    .dark .text-on-surface-variant {
+      color: #fbcfe8 !important;
     }
 
     /* ── Top nav active / inactive ── */
@@ -134,31 +161,31 @@
     }
 
     .nav-link.is-active {
-      color: #124af0;
-      border-bottom-color: #124af0;
+      color: #db2777;
+      border-bottom-color: #db2777;
     }
 
     .dark .nav-link.is-active {
-      color: #4edea3;
-      border-bottom-color: #4edea3;
+      color: #f472b6;
+      border-bottom-color: #f472b6;
     }
 
     .nav-link:not(.is-active) {
-      color: #64748b;
+      color: #9d174d;
     }
 
     .dark .nav-link:not(.is-active) {
-      color: #94a3b8;
+      color: #fecdd3;
     }
 
     .nav-link:not(.is-active):hover {
-      color: #131b2e;
-      background-color: #f2f3ff;
+      color: #db2777;
+      background-color: #fce7f3;
     }
 
     .dark .nav-link:not(.is-active):hover {
       color: #ffffff;
-      background-color: #1e293b;
+      background-color: #500732;
     }
 
     /* ── Sidebar nav active / inactive ── */
@@ -174,14 +201,14 @@
     }
 
     .sidebar-link.is-active {
-      background-color: #dae2fd;
-      color: #124af0;
+      background-color: #fdf2f8;
+      color: #db2777;
       font-weight: 700;
     }
 
     .dark .sidebar-link.is-active {
-      background-color: rgba(18, 74, 240, 0.2);
-      color: #4edea3;
+      background-color: #83184333;
+      color: #f472b6;
     }
 
     .sidebar-link:not(.is-active) {
@@ -361,13 +388,13 @@
         <div class="relative z-10">
           <div
             class="inline-flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-full text-xs font-label text-surface-tint font-semibold mb-5">
-            <span class="w-2 h-2 rounded-full bg-[#4edea3] animate-pulse inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-[#f472b6] animate-pulse inline-block"></span>
             2027 하반기 취업 준비 중
           </div>
           <h2
             class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface tracking-tighter mb-6 leading-tight">
             꾸준한 학습과 실습을 통해
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#124af0] to-[#4edea3]">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#db2777] to-[#f472b6]">
               실무 역량을 갖춘
             </span>
             신입 백엔드 개발자입니다.
@@ -456,7 +483,7 @@
                 <div class="flex items-center gap-2">
                   <h4 class="font-headline text-xl font-bold text-on-surface">2024 충남 소프트웨어 해커톤</h4>
                   <span
-                    class="text-xs font-label bg-[#4edea3]/20 text-[#005236] dark:text-[#4edea3] px-2 py-0.5 rounded-full font-semibold">🥈
+                    class="text-xs font-label bg-[#f472b6]/20 text-[#9d174d] dark:text-[#f472b6] px-2 py-0.5 rounded-full font-semibold">🥈
                     최우수상</span>
                 </div>
                 <span
@@ -537,7 +564,7 @@
             <div class="flex justify-between items-start mb-3">
               <div class="flex items-center gap-3">
                 <h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-surface-tint transition-colors">UniForum (대학 수업 커뮤니티 웹앱)</h4>
-                <span class="text-xs font-label bg-[#4edea3]/20 text-[#005236] dark:text-[#4edea3] px-2 py-0.5 rounded-full font-semibold">캡스톤 디자인 팀 프로젝트 (2025.03 ~ 2025.06)</span>
+                <span class="text-xs font-label bg-[#f472b6]/20 text-[#9d174d] dark:text-[#f472b6] px-2 py-0.5 rounded-full font-semibold">캡스톤 디자인 팀 프로젝트 (2025.03 ~ 2025.06)</span>
               </div>
             </div>
             <p class="font-body text-on-surface-variant text-sm mb-4 leading-relaxed">
@@ -557,7 +584,7 @@
             <div class="flex justify-between items-start mb-3">
               <div class="flex items-center gap-3">
                 <h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-surface-tint transition-colors">DevResume (개발자 포트폴리오 템플릿)</h4>
-                <span class="text-xs font-label bg-[#4edea3]/20 text-[#005236] dark:text-[#4edea3] px-2 py-0.5 rounded-full font-semibold">개인 프로젝트 (2024.01 ~ 2024.02)</span>
+                <span class="text-xs font-label bg-[#f472b6]/20 text-[#9d174d] dark:text-[#f472b6] px-2 py-0.5 rounded-full font-semibold">개인 프로젝트 (2024.01 ~ 2024.02)</span>
               </div>
             </div>
             <p class="font-body text-on-surface-variant text-sm mb-4 leading-relaxed">
